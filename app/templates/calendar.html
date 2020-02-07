@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1>{{ date }} </h1>
+	<table class="Calendar">
+	  <tr>
+	    <th colspan="2">Habits</th>
+	  </tr>
+	  {% for habit in habits %}
+		  <tr>
+		    <td>{{ habit }}</td>
+		    <td> success! </td>
+		  </tr>
+		{% endfor %}
+	</table>
+{% endblock content %}
